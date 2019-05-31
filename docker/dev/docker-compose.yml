@@ -1,0 +1,42 @@
+version: '3.5'
+
+
+services:
+    postgres:
+        image: postgres:9.6
+        deploy:
+            replicas: 1
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 1
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: changeit
+        command: ["-c", "max_connections=300"]
+        networks:
+            default:
+                aliases:
+                    - postgres
+    teamspeak:
+        image: teamspeak
+        deploy:
+            replicas: 1
+            restart_policy:
+                condition: any
+                delay: 5s
+        environment:
+            TS3SERVER_LICENSE: accept
+
+        ports:
+        - 9987:9987/udp
+        - 10011:10011
+        - 30033:30033
+
+networks:
+    default:
+        external:
+            name: teamspeak_faceit_bot

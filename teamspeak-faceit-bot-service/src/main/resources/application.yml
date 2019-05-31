@@ -1,1 +1,52 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        name:
+        username: postgres
+        password: changeit
+
+    jpa:
+        database-platform: com.deelef.teamspeak.config.FixedPostgreSQL82Dialect
+        database: POSTGRESQL
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            naming:
+                strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+        properties:
+            hibernate.cache.use_second_level_cache: false
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: false
+            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+            hibernate.hbm2ddl.auto: update
+            hibernate:
+                temp:
+                    use_jdbc_metadata_defaults: false
+
+
+server.use-forward-headers: true
+server.tomcat.internal-proxies: 127\\.0\\.0\\.1
+
+faceit.api-key: FACEIT_API_KEY
+
+spring.profiles.include: run-teamspeak-bot
+steam:
+    auth-callback: http://localhost:8080/steam/steam-auth-callback
+    token: STEAM_TOKEN
+
+teamspeak:
+    name: YOUR_TEAMSPEAK_NAME
+    www: https://yoursitename.com
+    runbot: true
+    host: localhost
+    nickname: teamspeak-bot
+    login:
+        username: serveradmin
+        password: changeit
+
+
+
+admin:
+    user: changeit
+    password: changeit
 
