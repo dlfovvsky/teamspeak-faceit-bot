@@ -1,7 +1,30 @@
-##### Teamspeak Faceit Bot
+# Teamspeak Faceit Bot
+
+## Preview
+- Teamspeak 
+<center>
+  <img src="https://i.imgur.com/4etl0pT.png" width="75%" />
+</center><br/>
 
 
+- Website
+<center>
+  <img src="https://i.imgur.com/9oqd9sK.png" width="75%" />
+</center><br/>
 
+
+<center>
+  <img src="https://i.imgur.com/ZS4aWwq.png" width="75%" />
+</center><br/>  
+ 
+<center>
+  <img src="https://i.imgur.com/QrgjX9R.png" width="75%" />
+</center>
+
+
+## Live demo
+- Teamspeak: dalafasta.pl
+- Website: https://bot.dalafasta.pl
 ## For Production deployment
 
 
