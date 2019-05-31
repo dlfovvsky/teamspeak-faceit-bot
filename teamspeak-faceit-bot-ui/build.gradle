@@ -1,0 +1,28 @@
+plugins {
+    id "com.moowork.node" version "1.2.0"
+}
+
+node {
+    version = "10.15.1"
+    npmVersion = "6.4.1"
+    yarnVersion = "1.13.0"
+
+    download = true
+}
+
+task clean(type: Delete) {
+    delete "build"
+    followSymlinks = true
+}
+
+task build(type: YarnTask, group: "node") {
+    dependsOn yarn
+    args = ["run", "build"]
+}
+
+task test(type: YarnTask, group: "node") {
+    dependsOn build
+    args = ["run", "test"]
+}
+
+

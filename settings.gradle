@@ -1,0 +1,5 @@
+rootProject.name = projectName
+
+include "teamspeak-faceit-bot-ui"
+include "teamspeak-faceit-bot-service"
+

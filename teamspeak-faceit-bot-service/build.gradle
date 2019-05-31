@@ -1,0 +1,29 @@
+plugins {
+	id "java"
+	id "org.springframework.boot"
+	id "io.spring.dependency-management"
+}
+
+compileJava {
+	sourceCompatibility = "8"
+	targetCompatibility = "8"
+}
+
+dependencies {
+	implementation(
+			[group: "org.springframework.boot", name: "spring-boot-starter-web"],
+	)
+
+	annotationProcessor(
+			[group: "org.springframework.boot", name: "spring-boot-autoconfigure-processor"],
+			[group: "org.springframework.boot", name: "spring-boot-configuration-processor"]
+	)
+
+	runtimeOnly(
+			[group: "org.springframework.boot", name: "spring-boot-devtools"],
+	)
+
+	testImplementation(
+			[group: "org.springframework.boot", name: "spring-boot-starter-test"],
+	)
+}

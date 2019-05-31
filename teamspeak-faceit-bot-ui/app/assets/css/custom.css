@@ -1,0 +1,175 @@
+body {
+  font-size: 14px;
+  font-family: Play, sans-serif;
+}
+
+.async-select {
+  z-index: 2;
+}
+
+.navbar-collapse {
+  background-color: #171a21;
+}
+
+.px-nav-toggle {
+  background-color: #171a21;
+}
+
+.navbar-brand {
+  padding: 0 17.2px;
+}
+
+.note-title {
+  color: black;
+}
+
+.note p {
+  color: black;
+}
+
+.ui.message.broadcast-popup {
+  box-shadow: 0 0 6px 0 #666;
+  position: fixed;
+  left: calc(50% - 300px);
+  top: 25px;
+  width: 600px;
+  z-index: 1011;
+}
+
+.note {
+  margin-bottom: 0;
+}
+
+.navbar {
+  position: fixed;
+}
+
+.px-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  text-align: right;
+  background-color: #171a21;
+  border: none;
+}
+
+.box-left-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 20px;
+  color: white;
+}
+
+.px-nav-toggle {
+  right: auto !important;
+}
+
+.px-nav-left {
+  position: fixed;
+  /*    -webkit-box-shadow: inset -15px 0px 75px 0px rgba(36,42,49,1);
+      -moz-box-shadow: inset -15px 0px 75px 0px rgba(36,42,49,1);
+      box-shadow: inset -15px 0px 75px 0px rgba(36,42,49,1);*/
+  box-shadow: inset -1px 0 30px #18191f;
+  background-color: #1E2A39;
+}
+
+#online-drop {
+  width: 190px;
+  height: auto;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#online-drop .image {
+  transition: opacity 0.1s ease-in-out;
+  width: 8em;
+  height: auto;
+  margin-bottom: -10%;
+  margin-top: -10%;
+}
+
+#online-drop .text {
+  transition: opacity 0.1s ease-in-out;
+  width: 8em;
+  height: 8em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#online-drop .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#online-drop .text-name-1 {
+  font-size: 11px;
+}
+
+#online-drop .text-name-2 {
+  font-size: 10px;
+  display: block;
+  line-height: 3px;
+}
+
+#online-drop:hover .image {
+  opacity: 0;
+}
+
+#online-drop:hover .text {
+  opacity: 1;
+}
+
+#online-drop:hover .text-name-1 {
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.user-name-hover {
+  display: block;
+  padding-top: 8px;
+  color: #FFFFFF;
+  transition: 0.3s;
+}
+
+.avatar-hover {
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.box-left-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 20px;
+  color: white;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  border-top: 1px solid rgba(0, 0, 0, .45);
+  padding: 12px;
+}
+
+.table > thead > tr > th {
+  border-bottom: 1px solid rgba(0, 0, 0, .45);
+  padding: 12px;
+}
+
+.box {
+  background: #171a21;
+}
+
+
