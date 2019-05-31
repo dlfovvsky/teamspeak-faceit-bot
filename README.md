@@ -26,7 +26,7 @@
 - Teamspeak: dalafasta.pl
 - Website: https://bot.dalafasta.pl
 ## For Production deployment
-
+NOT READY YET, if you are interested PM ME
 
 ## For development
 1. Install docker
